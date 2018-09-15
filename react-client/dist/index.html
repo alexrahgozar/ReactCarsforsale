@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Item List</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs({
+      collapsible: true
+    });
+  } );
+  </script>
+</head>
+
+  <style>
+  div {
+    padding-left: 40px
+  }
+  h1 {
+    color: gold
+  }
+  label {
+    color: gold
+  }
+   input{
+     background-color: #D0D0D0
+   }
+    body {
+      background: linear-gradient(to bottom, black  30%, red 30%, black 100%, red 50%)
+    }
+    ul {
+         width:50%;
+        border: 2px solid black;
+        border-collapse: collapse;
+        background-color: red
+
+
+
+    }
+    li {
+
+        margin-right: 30px
+        padding: 7px;
+        /* text-align: left; */
+    }
+    li {
+        width: 100%;
+        font-size: 40px
+        background: linear (to top, red 50%, green 30%, black 60%, blue 60%)
+
+    }
+    .BSUL {
+      background-color: black;
+      border-width: 0px;
+      font-size: 14px
+
+    }
+    #tabs {
+      background-color: black;
+    }
+    li.li-Tabs {
+      background-color: red
+    }
+    .top-tabs {
+      background-color: black;
+    }
+    .inLi {
+      color: gold
+    }
+    </style>
+
+<body>
+<div id="app"></div>
+<h1 id='cars'></h1>
+<div id="tabs">
+  <ul class='top-tabs'>
+    <li class='li-Tabs'><a href="#tabs-1">About Carsforsale.com®</a></li>
+    <li class='li-Tabs'><a href="#tabs-2">Buy or Sell</a></li>
+    <li class='li-Tabs'><a href="#tabs-3">Resources</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p class='inLi'>Carsforsale.com®, founded in 1999 and headquartered in Sioux Falls, South Dakota, is simply <br>the fastest and easiest way to buy or sell used cars online. With millions of vehicles listed from <br>thousands of dealers nationwide you are sure to find the perfect vehicle. Selling your vehicle? <br>List it here, for free. It is our goal to offer the millions of shoppers on Carsforsale.com® the most <br>efficient solution to connect buyers with new or used cars for sale.
+
+</p>
+  </div>
+  <div id="tabs-2">
+    <ul class='BSUL'>
+      <li class='inLi'>Sell My Car</li>
+      <li class='inLi'>Auto Loans</li>
+    </ul>
+  </div>
+  <div id="tabs-3">
+    <ul class='BSUL'>
+      <li class='inLi'>Free Bill of Sale</li>
+      <li class='inLi'>Privacy Policy</li>
+      <li class='inLi'>Terms and Conditions</li>
+      <li class='inLi'>Sitemap</li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="bundle.js"></script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = (winScroll / height) * 100;
+document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>
