@@ -39,9 +39,9 @@ class Cars extends React.Component {
    console.log(data)
     // console.log('function saveMyCar: ', this.props.saveMyCar)
 
-    e.preventDefault()
-    this.props.saveMyCar(data)
-    e.target.reset();
+    // e.preventDefault()
+    // this.props.saveMyCar(data)
+    // e.target.reset();
   }
 
   render() {
